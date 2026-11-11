@@ -1,6 +1,6 @@
 # DODGE — Arcade Game
 
-A small 2D browser arcade game built with plain HTML, CSS, and JavaScript. No build tools, packages, account, or server are required.
+A bright, colorful 2D browser arcade game built with plain HTML, CSS, and JavaScript. No build tools, packages, account, or server are required.
 
 ## Play locally
 
@@ -9,14 +9,14 @@ A small 2D browser arcade game built with plain HTML, CSS, and JavaScript. No bu
 3. Press **Start Game**.
 4. Move with **← / →** or **A / D**. On a phone, use the on-screen arrows or drag across the game area.
 
-Avoid the falling blocks and survive as long as possible. Your best score is saved in this browser using local storage.
+Dodge the falling shapes. The waves become faster and denser as your score increases. Your best score is saved in this browser using local storage.
 
 ## Files
 
-- `index.html` — page structure
-- `style.css` — layout and visual styling
-- `game.js` — game loop, controls, collisions, and scoring
+- `index.html` — page structure and game instructions
+- `style.css` — bright, responsive visual design
+- `game.js` — game loop, obstacle waves, controls, collisions, and scoring
 
 ## Customize
 
-The game is intentionally dependency-free. Edit the constants near the top of `game.js` to adjust player speed, obstacle size, and difficulty.
+The game is intentionally dependency-free. Adjust the player speed, wave timing, obstacle speed, and difficulty progression near the top of `game.js`.
