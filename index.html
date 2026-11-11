@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#080b18">
+  <title>DODGE — Arcade Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="shell">
+    <header class="topbar">
+      <a class="brand" href="./" aria-label="DODGE home">DODGE<span>.</span></a>
+      <div class="stats" aria-live="polite">
+        <div><span class="stat-label">SCORE</span><strong id="score">0000</strong></div>
+        <div><span class="stat-label">BEST</span><strong id="best">0000</strong></div>
+        <div><span class="stat-label">LEVEL</span><strong id="level">01</strong></div>
+      </div>
+    </header>
+
+    <section class="game-panel" aria-label="Dodge game">
+      <div class="game-heading">
+        <div><p class="eyebrow">ARCADE / 001</p><h1>Stay in the <span>zone.</span></h1></div>
+        <p class="hint">MOVE. DODGE. SURVIVE.</p>
+      </div>
+      <div class="game-wrap">
+        <canvas id="game" width="800" height="520" aria-label="Game area. Move with the arrow keys or A and D."></canvas>
+        <div class="overlay" id="overlay">
+          <p class="eyebrow" id="overlay-kicker">READY PLAYER ONE</p>
+          <h2 id="overlay-title">DODGE THE DROP</h2>
+          <p id="overlay-copy">Avoid the falling blocks. How long can you last?</p>
+          <button id="start-button" type="button">START GAME <span>→</span></button>
+          <p class="overlay-note">← → or A / D to move</p>
+        </div>
+      </div>
+      <div class="mobile-controls" aria-label="Touch controls">
+        <button type="button" class="move-button" data-dir="-1" aria-label="Move left">←</button>
+        <span>MOVE</span>
+        <button type="button" class="move-button" data-dir="1" aria-label="Move right">→</button>
+      </div>
+      <footer><span>ONE LIFE. ONE RUN.</span><span>BUILT TO PLAY <b>✳</b></span></footer>
+    </section>
+  </main>
+  <script src="game.js"></script>
+</body>
+</html>
